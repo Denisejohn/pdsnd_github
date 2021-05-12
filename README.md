@@ -1,17 +1,16 @@
 >**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-Include the date you created this project and README file.
+This project was created on 12th May 2021
 
 ### Project Title
-Replace the Project Title
+DJ Bikeshare Analysis
 
 ### Description
-Describe what your project is about and what it does
+This project allows a user to interrogate data from a Bikeshare company and see statistics about the most popular days and users in three different cities in the USA.
 
 ### Files used
-Include the files used
+Files used are bikeshare_2.py, washington.csv, new_york_city.csv, chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Reference Material [link] (https://www.w3schools.com/python/pandas/default.asp).
