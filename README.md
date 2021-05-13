@@ -6,7 +6,7 @@ This project was created on 12th May 2021
 
 ### Project Title
 DJ Bikeshare Analysis
-<img>/divvy.jpeg
+(/divvy.jpeg)
 ### Description
 This project allows a user to interrogate data from a Bikeshare company and see statistics about the most popular days and users in three different cities in the USA.
 
