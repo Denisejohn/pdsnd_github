@@ -11,14 +11,14 @@ DJ Bikeshare Analysis
 This project allows a user to interrogate data from a Bikeshare company and see statistics about the most popular days and users in three different cities in the USA.
 
 ### Files used
-Files used are
--bikeshare_2.py,
--washington.csv,
--new_york_city.csv,
--chicago.csv
+Files used are:
+- bikeshare_2.py,
+- washington.csv,
+- new_york_city.csv,
+- chicago.csv
 
 ### Credits
 -Reference Material for research purposes:
     -W3 Schools  (https://www.w3schools.com/python/pandas/default.asp).
-#### Projects
-In configuring my readme file, I looked to the Lighthouse project for ideas: https://github.com/GoogleChrome/lighthouse/blob/master/readme.md
+##### Projects
+In configuring my readme file, I looked to the **Lighthouse** project for ideas: https://github.com/GoogleChrome/lighthouse/blob/master/readme.md
