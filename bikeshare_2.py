@@ -106,16 +106,16 @@ def time_stats(df):
     common_month =df['month'].mode()[0]
     datetime_object = datetime.datetime.strptime(str(common_month), "%m")
     month_name = datetime_object.strftime("%B")
-    print('The most common month is:', common_month, '(', month_name,')')
+    print('The most popular month is:', common_month, '(', month_name,')')
 
 
     # display the most common day of week
     common_dow =df['day_of_week'].mode()[0]
-    print('The most common day of the week is:', common_dow)
+    print('The most popular day of the week is:', common_dow)
 
     # display the most common start hour
     common_hour =df['month'].mode()[0]
-    print('The most common start hour is:', common_hour)
+    print('The most popular start hour is:', common_hour)
     print("\nThe Time stats calculations took %s seconds." % (time.time() - start_time))
     print('-'*80)
 
@@ -128,15 +128,15 @@ def station_stats(df):
 
     # display most commonly used start station
     common_start_station =df['Start Station'].mode()[0]
-    print('The most common start station is:', common_start_station)
+    print('The most popular start station is:', common_start_station)
 
     # display most commonly used end station
     common_end_station =df['End Station'].mode()[0]
-    print('The most common end station is:', common_end_station)
+    print('The most popular end station is:', common_end_station)
 
     # display most frequent combination of start station and end station trip
     combo =df.groupby(['Start Station','End Station']).size().nlargest(1)
-    print('\nThe most common Start and End combination is:\n\t', combo)
+    print('\nThe most popular Start and End combination is:\n\t', combo)
 
 
 
