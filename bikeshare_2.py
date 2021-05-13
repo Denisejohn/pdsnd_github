@@ -52,7 +52,7 @@ def get_filters():
                 print('That\'s not a valid day, please try again')
         except:
             print('\nInvalid value\n')
-    print('-'*80)
+    print('-*'*40)
     return city, month, day
 
 
@@ -106,18 +106,18 @@ def time_stats(df):
     common_month =df['month'].mode()[0]
     datetime_object = datetime.datetime.strptime(str(common_month), "%m")
     month_name = datetime_object.strftime("%B")
-    print('The most common month is:', common_month, '(', month_name,')')
+    print('The most popular month is:', common_month, '(', month_name,')')
 
 
     # display the most common day of week
     common_dow =df['day_of_week'].mode()[0]
-    print('The most common day of the week is:', common_dow)
+    print('The most popular day of the week is:', common_dow)
 
     # display the most common start hour
     common_hour =df['month'].mode()[0]
-    print('The most common start hour is:', common_hour)
+    print('The most popular start hour is:', common_hour)
     print("\nThe Time stats calculations took %s seconds." % (time.time() - start_time))
-    print('-'*80)
+    print('-*'*40)
 
 
 def station_stats(df):
@@ -128,20 +128,20 @@ def station_stats(df):
 
     # display most commonly used start station
     common_start_station =df['Start Station'].mode()[0]
-    print('The most common start station is:', common_start_station)
+    print('The most popular start station is:', common_start_station)
 
     # display most commonly used end station
     common_end_station =df['End Station'].mode()[0]
-    print('The most common end station is:', common_end_station)
+    print('The most popular end station is:', common_end_station)
 
     # display most frequent combination of start station and end station trip
     combo =df.groupby(['Start Station','End Station']).size().nlargest(1)
-    print('\nThe most common Start and End combination is:\n\t', combo)
+    print('\nThe most popular Start and End combination is:\n\t', combo)
 
 
 
     print("\nThe Station Stats calculations took %s seconds." % (time.time() - start_time))
-    print('-'*80)
+    print('-*'*40)
 
 
 def trip_duration_stats(df):
@@ -164,7 +164,7 @@ def trip_duration_stats(df):
     print('\t(.....Which in hours, minutes, seconds is:',conv_mean ,')')
 
     print("\nThe Trip Duration calculations took %s seconds." % (time.time() - start_time))
-    print('-'*80)
+    print('-*'*40)
 
 
 def user_stats(df):
@@ -192,7 +192,7 @@ def user_stats(df):
 
 
     print("\nThe User Stats calculations took %s seconds." % (time.time() - start_time))
-    print('-'*80)
+    print('-*'*40)
 
 def display_data(df):
     """Displays data at the request of the user, 5 rows at a time"""
@@ -207,7 +207,7 @@ def display_data(df):
         view_display = input('Would you like to see 5 more rows?:  ').lower()
         if view_display.lower() != 'yes':
             break
-    print('-'*80)
+    print('-*'*40)
 
 def main():
     while True:
