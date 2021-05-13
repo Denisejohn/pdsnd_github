@@ -52,7 +52,7 @@ def get_filters():
                 print('That\'s not a valid day, please try again')
         except:
             print('\nInvalid value\n')
-    print('-'*80)
+    print('-*'*40)
     return city, month, day
 
 
@@ -117,7 +117,7 @@ def time_stats(df):
     common_hour =df['month'].mode()[0]
     print('The most popular start hour is:', common_hour)
     print("\nThe Time stats calculations took %s seconds." % (time.time() - start_time))
-    print('-'*80)
+    print('-*'*40)
 
 
 def station_stats(df):
@@ -141,7 +141,7 @@ def station_stats(df):
 
 
     print("\nThe Station Stats calculations took %s seconds." % (time.time() - start_time))
-    print('-'*80)
+    print('-*'*40)
 
 
 def trip_duration_stats(df):
@@ -164,7 +164,7 @@ def trip_duration_stats(df):
     print('\t(.....Which in hours, minutes, seconds is:',conv_mean ,')')
 
     print("\nThe Trip Duration calculations took %s seconds." % (time.time() - start_time))
-    print('-'*80)
+    print('-*'*40)
 
 
 def user_stats(df):
@@ -192,7 +192,7 @@ def user_stats(df):
 
 
     print("\nThe User Stats calculations took %s seconds." % (time.time() - start_time))
-    print('-'*80)
+    print('-*'*40)
 
 def display_data(df):
     """Displays data at the request of the user, 5 rows at a time"""
@@ -207,7 +207,7 @@ def display_data(df):
         view_display = input('Would you like to see 5 more rows?:  ').lower()
         if view_display.lower() != 'yes':
             break
-    print('-'*80)
+    print('-*'*40)
 
 def main():
     while True:
