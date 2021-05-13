@@ -18,7 +18,9 @@ Files used are:
 - chicago.csv
 
 ### Credits
--Reference Material for research purposes:
-    -W3 Schools  (https://www.w3schools.com/python/pandas/default.asp).
-##### Projects
+Reference Material for research purposes:
+    * W3 Schools  (https://www.w3schools.com/python/pandas/default.asp).
+```
+#####**Projects**
 In configuring my readme file, I looked to the **Lighthouse** project for ideas: https://github.com/GoogleChrome/lighthouse/blob/master/readme.md
+```
